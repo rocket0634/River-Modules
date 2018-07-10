@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: be80604a8f0fbf24cb49edceaaa449a6
+timeCreated: 1515980561
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: pokemon-font
+  fontNames:
+  - pokemon-font
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

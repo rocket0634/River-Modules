@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Don't Press Down — Keep Talking and Nobody Explodes Module</title>
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type='text/css' href="css/font.css">
+    </head>
+    <body>
+        <div id="ManualContent">
+            <div class="section">
+                <div class="page page-bg-01">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">Don't Press Down</span>
+                    </div>
+                    <div class="page-content">
+                        <img src="img/Component/Downpdf.svg" class="diagram">
+                        <h2>On the Subject of Pressing Down</h2>
+                        <p class="flavour-text">They say a thousand monkeys with typewriters will, given infinite time, eventually produce the works of Shakespeare. But what if you give twenty thousand monkeys a single typewriter?</p>
+                        <p><b>Welcome to Twitch Plays A Cat's Adventure!</b><br> Or, at least, a demo of it. That's right! The classic Adventure RPG we all know and love has been modified by some random programmer on the Internet to take inputs from a chat-based system to allow everyone to engage with the game at once! 
+						<br><br> However, since such a project would be too large to incorporate into a module- we have decided to take one of the most frustrating aspects of TPCA and incorporate it into a live bomb! <font size="-6">I'm sure this is legal.</font>
+						<ul>
+                            <li>This module features a screen and a chat log. The log will show you the commands currently being accepted into the module.</li>
+                            <li>You are given three buttons you can press that will send an "up", "left", or "right" input into the chat.</li>
+                            <li>The screen will feature footage from TPCA, specifically from the Route 22 Ledge. Your goal is to guide the cat to the other side of the ledge and into the next area. Sounds easy, right?</li>
+                            <li>No strikes will be earned from inputs in this module. However, if the "down" button is pressed, you will jump down the ledge and will have to attempt from the beginning again.</li>
+						</ul>
+						This module is designed with a database of inputs that are randomly called to the chat log via IRC protocol. The database can be manipulated by pressing the buttons on the module, allowing for better chances to return desired inputs into the game. These manipulations will be outlined below. <br><b>However, if the module detects another IRC connection to the bomb, it will override the database and the rules will not apply.</b> More details about this are available on page 3.</p>
+					</div>
+                   <div class="page-footer relative-footer">Page 1 of 4</div>
+                </div>
+				<div class="page page-bg-04">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">Don't Press Down</span>
+                    </div>
+                    <div class="page-content">                    
+					<h3>On The Subject of Twitch Plays KTANE</h3>
+					<p>Out of some miracle, TPCA has managed to inspire other channels on Twitch to develop software that allows multiple people to be able to interact with one system. To our luck, this system happens to be IRC-based, which would activate the override installed in the module.<br>
+					Instead of obtaining inputs from the database, the module will obtain inputs from the IRC source. Unfortunately, we do not know how Twitch's system works, as such- <i>all</i> matches for inputs will be accepted, regardless of if they are attached to other characters. We have attempted to install a filter, but it doesn't appear too effective.<br>
+					<br>
+					Unlike most modules, this module will take inputs outside of those directed at it, including those sent to other modules. The inputs accepted are u, l, d, r, Up, Left, Down, Right, and South. If you happen to be using an IRC-based system, it's highly advised to avoid words thatd containsd thed letterd 'd'.
+					<br>
+					Here is a list of words we've attempted to filter from the module:<br></p>
+					<ul>
+						<li>Solved</li>
+						<li>single 'd' messages</li>
+						<li>single 'down' messages</li>
+						<li>Any administrator message (I.e. a bot that keeps track of solves and strikes)</li>
+						<li>Any username</li>
+						<li>Edgework commands (This filter breaks every minute, for some reason. So do be careful if you need to check edgework)</li>
+					</ul>
+					Note that the filter <i>only</i> works on single d and down messages. If they are attached to any other character, the command will be registered as a down press. Also, the module refuses to accept any version of "do" as a filter, outside of "down". <font size="-6">I promise we know what we're doing.</font>
+					</div>
+					<div class="page-footer relative-footer">Page 4 of 4</div>
+				</div>
+            </div>
+        </div>
+    </body>
+</html>

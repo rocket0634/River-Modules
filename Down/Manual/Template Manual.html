@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Don't Press Down — Keep Talking and Nobody Explodes Module</title>
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type='text/css' href="css/font.css">
+    </head>
+    <body>
+        <div id="ManualContent">
+            <div class="section">
+                <div class="page page-bg-01">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">Don't Press Down</span>
+                    </div>
+                    <div class="page-content">
+                        <img src="img/Component/Downpdf.svg" class="diagram">
+                        <h2>On the Subject of Pressing Down</h2>
+                        <p class="flavour-text">They say a thousand monkeys with typewriters will, given infinite time, eventually produce the works of Shakespeare. But what if you give twenty thousand monkeys a single typewriter?</p>
+                        <p><b>Welcome to Twitch Plays A Cat's Adventure!</b><br> Or, at least, a demo of it. That's right! The classic Adventure RPG we all know and love has been modified by some random programmer on the Internet to take inputs from a chat-based system to allow everyone to engage with the game at once! 
+						<br><br> However, since such a project would be too large to incorporate into a module- we have decided to take one of the most frustrating aspects of TPCA and incorporate it into a live bomb! <font size="-6">I'm sure this is legal.</font>
+						<ul>
+                            <li>This module features a screen and a chat log. The log will show you the commands currently being accepted into the module.</li>
+                            <li>You are given three buttons you can press that will send an "up", "left", or "right" input into the chat.</li>
+                            <li>The screen will feature footage from TPCA, specifically from the Route 22 Ledge. Your goal is to guide the cat to the other side of the ledge and into the next area. Sounds easy, right?</li>
+                            <li>No strikes will be earned from inputs in this module. However, if the "down" button is pressed, you will jump down the ledge and will have to attempt from the beginning again.</li>
+                            <li><strike>There are also two buttons on the module that allow you to switch between the game and another window. What that other window is, though, I do not know. A start button may also be available, but isn't in the preview yet.</strike></li>
+						</ul>
+                        <p>This module is designed with a database of messages that are randomly called to the chat log via IRC code. Typically, this database is predictable and can follow specific patterns that will be outlined below. <br><B>However, if the module detects another form of IRC connected to the bomb, it will override the database and the rules will not apply.</b> More details about this are available on page 3.<br>
+						</p>
+						<h4>Helpful inputs</h4>
+						<p>Everyone on the team is working hard to help you progress through the ledge! As such, many of these inputs will be left or up inputs. Right inputs are only considered helpful if you have fallen off the ledge.
+						<br>Using this table, determine rather you should focus on a helpful input or a buffer input based on the number of inputs in the log. <b><br>Do not press anything until you have read through the following three sections.</b></p>
+                    </div>
+                   <div class="page-footer relative-footer">Page 1 of 4</div>
+                </div>
+                <div class="page page-bg-02">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">Don't Press Down</span>
+                    </div>
+                    <div class="page-content">
+						<table style="text-align:center">
+                            <tr>
+                                <th></th>
+                                <th>Timer ends with 1,3,5</th>
+                                <th>Timer ends with 4,7,8,9</th>
+								<th>Timer contains a 2 in either seconds digit</th>
+								<th>Otherwise</th>
+                            </tr>
+                            <tr>
+                                <td>3+ Left</td>
+								<td>&#8593;</td>
+								<td>&#8592;</td>
+								<td>any</td>
+								<td>&#8593;</td>
+                            </tr>
+                            <tr>
+                                <td>3+ Up</td>
+                                <td>&#8592;</td>
+                                <td>any</td>
+								<td>&#8594;</td>
+								<td>&#8593;</td>
+                            </tr>
+							<tr>
+								 <td>Exactly 2 Left and 1 Up</td>
+								 <td>&#8592;</td>
+								 <td>&#8593;</td>
+								 <td>any</td>
+								 <td>&#8592;</td>
+							</tr>
+							<tr>
+								<td>2+ Up and exactly 1 left</td>
+								<td>&#8593;</td>
+								<td>&#8594;</td>
+								<td>&#8592;</td>
+								<td>&#8592;</td>
+							</tr>
+							<tr>
+								<td>3+ Right</td>
+								<td>&#8593;</td>
+								<td>any</td>
+								<td>&#8593;</td>
+								<td>&#8594;</td>
+							</tr>
+							<tr>
+								<td>1 Up and at least 1 Right</td>
+								<td>&#8594;</td>
+								<td>&#8593;</td>
+								<td>&#8593;</td>
+								<td>&#8595;</td>
+							</tr>
+							<tr>
+								<td>Only 1 helpful command present*</td>
+								<td>&#8592; or &#8594;</td>
+								<td>&#8593; or &#8594;</td>
+								<td>&#8592; or &#8593;</td>
+								<td>any</td>
+							</tr>
+                        </table>
+						<small>*Left inputs are always prioritized unless you have fallen off the ledge.</small>
+                        <h3>Buffer Inputs</h3>
+                        <p>Along with those who are pushing for progress, there are also those who are trying to help by adding additional commands that don't necessarily make progress. Since the module can only take one command in a certain amount of time, people can push out unwanted inputs by buffering extra commands. The most common buffer is the Start command, but any command that isn't taken by the module can be considered a buffer.<br>Based on the following rules, determine rather an input is being buffered or not.</p>
+                        <h5>Buffered inputs include:</h5>
+						<ul>
+							<li>Any time when all inputs are allowed according to the previous table.</li>
+							<li>Any start input that is visible during a second divisible by 15.</li>
+							<li>Any a input that is visible on a second ending in 2 or 6, unless a start is visible.</li>
+							<li>Any b input that is visible on a second ending in 0 or 5, unless a start is visible.</li>
+							<li>Pressing Right when a 2 is visible on the timer.</li>
+							<li>Pressing Left when the timer ends in 7, 8, or 9.</li>
+							<li>Pressing Up when the timer ends in 1 or 6.</li>
+						</ul>
+                    </div>
+                   <div class="page-footer relative-footer">Page 2 of 4</div>
+                </div>
+				<div class="page page-bg-03">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">Don't Press Down</span>
+                    </div>
+                    <div class="page-content">
+						<h3>Unhelpful Inputs</h3>
+						<p>And finally, we reach the core of the problem- the Down inputs. There are quite a number of people out there who are in this for the chaos, so they'll pop into the chat with the sole purpose of disrupting progress. Your job is to either assist your team by giving helpful commands or by giving buffer commands. But before making your final decision, keep this table in mind as Down and other unhelpful inputs may change the rules.</p>
+						<table style="text-align:center">
+							<tr>
+								<td></td>
+								<td>Next most likely accepted input:</td>
+								<td>Input required to counter</td>
+								<td>Buffer Counter***</td>
+								<td>Risk of Falling off Ledge</td>
+							</tr>
+							<tr>
+								<td>4+ Downs</td>
+								<td>&#8595;</td>
+								<td>&#8594;</td>
+								<td>0</td>
+								<td>100%</td>
+							</tr>
+							<tr>
+								<td>3 Downs</td>
+								<td>&#8592;</td>
+								<td>Buffer input**</td>
+								<td>3</td>
+								<td>Heavy</td>
+							</tr>
+							<tr>
+								<td>b input visible on a second ending in 0 or 5, and a start is visible</td>
+								<td>&#8595;</td>
+								<td>Buffer input</td>
+								<td>3</td>
+								<td>Heavy</td>
+							</tr>
+							<tr>
+								<td>Right input registered (not buffered) when a Left input is needed</td>
+								<td>&#8594;</td>
+								<td>&#8592;</td>
+								<td>4</td>
+								<td>Light</td>
+							</tr>
+							<tr>
+								<td>Left input registered after falling off Ledge</td>
+								<td>&#8595;</td>
+								<td>&#8593;</td>
+								<td>2</td>
+								<td>N/A</td>
+							</tr>
+							<tr>
+								<td>2 Downs</td>
+								<td>&#8594;</td>
+								<td>&#8592;</td>
+								<td>3</td>
+								<td>Light</td>
+							</tr>
+							<tr>
+								<td>1 Down</td>
+								<td>&#8595;</td>
+								<td>&#8593;</td>
+								<td>3</td>
+								<td>Medium</td>
+							</tr>
+							<tr>
+								<td>No Downs</rd>
+								<td>&#8594;</td>
+								<td>&#8592;</td>
+								<td>2</td>
+								<td>Heavy</td>
+							</tr>
+						</table>
+						<small>**Unless all three downs are next to each other. In this case, a jump is unavoidable.</small>
+						<small><br>***Buffer Counter refers to the number of inputs required to offset the down inputs.</small><br>
+						<p>Using the Counter Buffer, count the number of inputs necessary to counter the next possible down. If there are no Down inputs, assume one will appear any time the last seconds digit is equal to the last digit of the serial number. If a counter input is placed at that second with no down input, the next down input will be skipped.<br></p>
+						</div>
+                   <div class="page-footer relative-footer">Page 3 of 4</div>
+                </div>
+				<div class="page page-bg-04">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">Don't Press Down</span>
+                    </div>
+                    <div class="page-content">
+					<h5>Important things to note:</h5>
+						<ul><li>The chat system has a spam filter, as such you may only be able to input once every few seconds.</li>
+							<li>Log will move automatically every 3 seconds, unless an input is received.</li>
+							<li>If an input is received, log will move automatically and pause until the next intended 3 second mark.</li>
+						</ul>
+                    
+					<h3>On The Subject of Twitch Plays KTANE</h3>
+					<p>Out of some miracle, TPCA has managed to inspire other channels on Twitch to develop software that allows multiple people to be able to interact with one system. To our luck, this system happens to be IRC-based, which would activate the override installed in the module.<br>
+					Instead of obtaining inputs from the database, the module will obtain inputs from the IRC source. Unfortunately, we do not know how Twitch's system works, as such- <i>all</i> matches for inputs will be accepted, regardless of if they are attached to other characters. We have attempted to install a filter, but it doesn't appear too effective.<br>
+					<br>
+					Unlike most modules, this module will take inputs outside of those directed at it, including those sent to other modules. The inputs accepted are u, l, d, r, Up, Left, Down, Right, and South. If you happen to be using an IRC-based system, it's highly advised to avoid words thatd containsd thed letterd 'd'.
+					<br>
+					Here is a list of words we've attempted to filter from the module:<br></p>
+					<ul>
+						<li>Solved</li>
+						<li>single 'd' messages</li>
+						<li>single 'down' messages</li>
+						<li>Any administrator message (I.e. a bot that keeps track of solves and strikes)</li>
+						<li>Any username</li>
+						<li>Edgework commands (This filter breaks every minute, for some reason. So do be careful if you need to check edgework)</li>
+					</ul>
+					Note that the filter <i>only</i> works on single d and down messages. If they are attached to any other character, the command will be registered as a down press. Also, the module refuses to accept any version of "do" as a filter, outside of "down". <font size="-6">I promise we know what we're doing.</font>
+					</div>
+					<div class="page-footer relative-footer">Page 4 of 4</div>
+				</div>
+            </div>
+        </div>
+    </body>
+</html>
